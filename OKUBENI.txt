@@ -1,0 +1,29 @@
+SINAV PROJEM – PMBOK 8 çalışma sitesi
+=====================================
+
+Açmak
+-----
+Terminalde bu klasöre gel ve çalıştır:
+
+    ./baslat.sh
+
+Tarayıcıda http://localhost:8642 açılır. Kapatmak için terminalde Ctrl+C.
+(Elle başlatmak istersen: python3 -m http.server 8642 --bind 127.0.0.1)
+
+Site sadece senin bilgisayarında çalışır; internete bağlanmaz, dışarıdan erişilemez.
+
+İlerlemen
+---------
+Tamamlanan dersler, test sonuçları ve kart kutuları tarayıcının yerel
+depolamasında (localhost:8642 için) saklanır. Hep aynı tarayıcı ve aynı
+port ile aç. Yedek almak için: Ayarlar > Dışa aktar.
+
+İçerik
+------
+- 18 ders (kursun 2026 PMBOK 8 notlarından), içinde etkileşimli araçlar
+- 252 soruluk test bankası: pratik ve süreli sınav modu
+- 164 flashcard, aralıklı tekrar (Leitner kutuları)
+- Hesap antrenmanı: EVM, PERT, kanal, EMV, kritik yol, bütçe (sınırsız soru)
+- Formül kağıdı (yazdırılabilir)
+
+"PMI ek" işaretli bilgiler ders notunda yoktu; PMI kaynaklarından eklendi.

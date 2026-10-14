@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sınav Projem</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2318223a'/%3E%3Cpath d='M7 9h12M7 16h8M7 23h15' stroke='%23e8960f' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side">
+    <a class="brand" href="#/">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--ink)"/><path d="M7 9h12M7 16h8M7 23h15" stroke="var(--amber)" stroke-width="3.5" stroke-linecap="round"/></svg>
+      <div><b>Sınav Projem</b><span>PMBOK 8 çalışma masası</span></div>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="searchInput" type="search" placeholder="Konu ara: TCPI, Tuckman…" aria-label="Ara">
+    </form>
+    <nav class="nav" id="mainNav">
+      <a href="#/" data-r="">Panel</a>
+      <a href="#/test" data-r="test">Test çöz</a>
+      <a href="#/kartlar" data-r="kartlar">Kartlar <span class="cnt" id="dueCnt" hidden></span></a>
+      <a href="#/hesap" data-r="hesap">Hesap antrenmanı</a>
+      <a href="#/formul" data-r="formul">Formül kağıdı</a>
+      <a href="#/ayarlar" data-r="ayarlar">Ayarlar</a>
+    </nav>
+    <div class="navlbl">Dersler</div>
+    <nav class="nav mods" id="modNav"></nav>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <div>
+    <div class="topbar">
+      <button class="btn sm" id="menuBtn" aria-label="Menü">☰</button>
+      <b>Sınav Projem</b>
+    </div>
+    <main id="main"></main>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="data/lessons1.js"></script>
+<script src="data/lessons2.js"></script>
+<script src="data/lessons3.js"></script>
+<script src="data/questions.js"></script>
+<script src="data/cards.js"></script>
+<script src="assets/widgets.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
